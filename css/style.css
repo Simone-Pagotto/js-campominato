@@ -1,0 +1,117 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Syne Mono', monospace;
+}
+
+
+/* COMMON */
+
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.bg-image{
+  background-image: url('../img/cminato-main.jpg');
+  background-position: center;
+}
+
+.dashboard {
+
+  border: 2px solid black;
+  width: 80vh;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.message{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  background-color: white;
+  opacity: 0.9;
+  z-index: 2;
+  height: 40%;
+  width: 33%;
+  text-align: center;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 40vh;
+}
+}
+
+
+
+
+.slot{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
+}
+
+.easy .slot {
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+  border: 1px solid black;
+}
+
+.medium .slot {
+  width: calc(100% / 8);
+  height: calc(100% / 8);
+  border: 1px solid black;
+}
+
+.hard .slot {
+  width: calc(100% / 6);
+  height: calc(100% / 6);
+  border: 1px solid black;
+}
+
+.slot:hover {
+  background-color: grey;
+}
+
+.green{
+  background-color: green;
+}
+
+.red{
+  background-color: red;
+  background-image: url('../img/bomb.svg');
+}
+
+.flag {
+  background-color: khaki;
+  background-image: url('../img/flag-of-black-long-shape.svg');
+}
+
+.obscure {
+  background-color: black;
+  opacity:0.8;
+}
+
+.light {
+  background-color: white;
+  opacity: 0.8;
+}
+
+.explosion{
+  background-image: url('../img/explosion.gif');
+  background-size: 100% 100%;
+}
+
+.victory {
+  background-image: url('../img/victory.gif');
+  background-size: 100% 100%;
+}
